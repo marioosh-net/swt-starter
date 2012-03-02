@@ -26,7 +26,7 @@ public class Start extends ApplicationWindow {
 		 * app title, icon, size
 		 */
 		getShell().setText("Sample App");
-		getShell().setImage(new Image (getShell().getDisplay(), ClassLoader.getSystemResourceAsStream("Apple-256.png")));
+		getShell().setImage(new Image (getShell().getDisplay(), ClassLoader.getSystemResourceAsStream(APP_ICON)));
 		getShell().setMinimumSize(700, 340);
 		
 		/**
