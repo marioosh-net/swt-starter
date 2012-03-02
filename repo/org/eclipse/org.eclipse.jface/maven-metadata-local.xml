@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.eclipse</groupId>
+  <artifactId>org.eclipse.jface</artifactId>
+  <versioning>
+    <release>3.7.0.v20110928-1505</release>
+    <versions>
+      <version>3.7.0.v20110928-1505</version>
+    </versions>
+    <lastUpdated>20120302132937</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.marioosh.swt</groupId>
+	<artifactId>swt-starter</artifactId>
+	<name>swt-starter</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<!-- Creating an Executable Jar -->
+						<manifest>
+							<mainClass>net.marioosh.swt.swtstart.Start</mainClass>
+						</manifest>
+					</archive>
+					<appendAssemblyId>false</appendAssemblyId>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>my</id>
+			<url>file://${basedir}\repo</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+		<!-- swt -->
+		<!-- win32 dependency -->
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>swt</artifactId>
+			<version>3.7.2</version>
+		</dependency>
+		
+		<!-- jface -->
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>org.eclipse.jface</artifactId>
+			<version>3.7.0.v20110928-1505</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>org.eclipse.equinox.common</artifactId>
+			<version>3.6.0.v20110523</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>org.eclipse.core.commands</artifactId>
+			<version>3.6.0.I20110111-0800</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>org.eclipse.osgi</artifactId>
+			<version>3.7.2.v20120110-1415</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>org.eclipse.ui.workbench</artifactId>
+			<version>3.7.1.v20120104-1859</version>
+		</dependency>
+
+	</dependencies>
+</project>
