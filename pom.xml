@@ -33,17 +33,24 @@
 	<repositories>
 		<repository>
 			<id>my</id>
-			<url>file://${basedir}\repo</url>
+			<url>file://${basedir}/repo</url>
 		</repository>
 	</repositories>
 
 	<dependencies>
 
 		<!-- swt -->
-		<!-- win32 dependency -->
+		<!-- win32 dependency
 		<dependency>
 			<groupId>org.eclipse</groupId>
-			<artifactId>swt</artifactId>
+			<artifactId>swt-win32</artifactId>
+			<version>3.7.2</version>
+		</dependency>
+    -->
+    <!-- linux dependency -->
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>swt-linux</artifactId>
 			<version>3.7.2</version>
 		</dependency>
 		
