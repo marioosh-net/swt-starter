@@ -47,6 +47,16 @@
 			</dependencies>
 		</profile>
 		<profile>
+			<id>linux-64</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.eclipse</groupId>
+					<artifactId>swt-linux-64</artifactId>
+					<version>3.7.2</version>
+				</dependency>
+			</dependencies>
+		</profile>
+		<profile>
 			<id>win32</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
