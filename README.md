@@ -6,11 +6,11 @@ swt-starter
 Building
 --------
 
-##linux 32-bit
-`mvn assembly:assembly -Plinux`
+###linux 32-bit
+<pre><code>mvn assembly:assembly -Plinux</code></pre>
 
-##linux 64-bit
-`mvn assembly:assembly -Plinux-64`
+###linux 64-bit
+<pre><code>mvn assembly:assembly -Plinux-64</code></pre>
 
-##win32
-`mvn assembly:assembly -Pwin32`
+###win32
+<pre><code>mvn assembly:assembly -Pwin32</code></pre>
