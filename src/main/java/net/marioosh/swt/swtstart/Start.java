@@ -1,5 +1,6 @@
 package net.marioosh.swt.swtstart;
 
+import net.marioosh.swt.swtstart.controls.Input;
 import net.marioosh.swt.swtstart.controls.Tabs;
 import net.marioosh.swt.swtstart.controls.Test;
 
@@ -43,7 +44,9 @@ public class Start extends ApplicationWindow {
 		 * main window layout
 		 * getShell() equals parent
 		 */
-		parent.setLayout(new GridLayout(1, false));
+		GridLayout layout = new GridLayout(1, false);
+		layout.verticalSpacing = 10;
+		parent.setLayout(layout);
 
 		/**
 		 * button example
@@ -70,6 +73,11 @@ public class Start extends ApplicationWindow {
 		Composite tab1Container = (Composite) tabs.getTab(0).getControl();
 		tab1Container.setLayout(new FillLayout());
 		new Button(tab1Container, SWT.PUSH).setText("Tab1 button");
+		
+		/**
+		 * inputs
+		 */
+		new Input(parent, SWT.NONE);
 		
 		// parent.pack();
 		return parent;
