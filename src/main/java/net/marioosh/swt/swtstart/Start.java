@@ -1,5 +1,6 @@
 package net.marioosh.swt.swtstart;
 
+import net.marioosh.swt.swtstart.controls.FileOpenDialog;
 import net.marioosh.swt.swtstart.controls.Input;
 import net.marioosh.swt.swtstart.controls.Tabs;
 import net.marioosh.swt.swtstart.controls.Test;
@@ -78,6 +79,11 @@ public class Start extends ApplicationWindow {
 		 * inputs
 		 */
 		new Input(parent, SWT.NONE);
+		
+		/**
+		 * file dialog
+		 */
+		new FileOpenDialog(parent, SWT.NONE);
 		
 		// parent.pack();
 		return parent;
