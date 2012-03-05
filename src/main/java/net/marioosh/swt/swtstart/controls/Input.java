@@ -6,6 +6,9 @@ import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
@@ -23,10 +26,13 @@ public class Input extends Composite {
 	}
 
 	private void buildControls() {
-		setLayout(new FillLayout());
+		RowLayout layout = new RowLayout();
+		layout.center = true;
+		setLayout(layout);
 		
 		new Label(this, SWT.BOLD).setText("Name");
-		final Text text = new Text(this, SWT.NONE);
+		final Text text = new Text(this, SWT.SINGLE | SWT.BORDER);
+		text.setBackground(getShell().getDisplay().getSystemColor(SWT.COLOR_WHITE));
 		
 		Button send = new Button(this, SWT.PUSH);
 		send.setText("Send");
