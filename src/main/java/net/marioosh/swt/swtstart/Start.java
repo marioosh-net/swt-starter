@@ -1,5 +1,6 @@
 package net.marioosh.swt.swtstart;
 
+import net.marioosh.swt.swtstart.controls.Tabs;
 import net.marioosh.swt.swtstart.controls.Test;
 
 import org.eclipse.jface.dialogs.MessageDialog;
@@ -61,6 +62,14 @@ public class Start extends ApplicationWindow {
 		 * some controls in outside class
 		 */
 		new Test(parent, SWT.NULL);
+		
+		/**
+		 * tabs controls
+		 */
+		Tabs tabs = new Tabs(parent, SWT.FILL);
+		Composite tab1Container = (Composite) tabs.getTab(0).getControl();
+		tab1Container.setLayout(new FillLayout());
+		new Button(tab1Container, SWT.PUSH).setText("Tab1 button");
 		
 		// parent.pack();
 		return parent;

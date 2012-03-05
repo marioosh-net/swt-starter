@@ -1,7 +1,5 @@
 package net.marioosh.swt.swtstart.controls;
 
-import java.awt.Color;
-
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Button;
