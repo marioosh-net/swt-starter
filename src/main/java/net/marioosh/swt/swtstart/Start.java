@@ -66,7 +66,7 @@ public class Start extends ApplicationWindow {
 		/**
 		 * tabs controls
 		 */
-		Tabs tabs = new Tabs(parent, SWT.FILL);
+		Tabs tabs = new Tabs(parent, SWT.NONE);
 		Composite tab1Container = (Composite) tabs.getTab(0).getControl();
 		tab1Container.setLayout(new FillLayout());
 		new Button(tab1Container, SWT.PUSH).setText("Tab1 button");

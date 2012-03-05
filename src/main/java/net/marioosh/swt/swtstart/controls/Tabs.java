@@ -19,11 +19,12 @@ public class Tabs extends Composite {
 	
 	public Tabs(Composite parent, int style) {
 		super(parent, style);
-		populateControls(parent);
+		buildControls();
 	}
 
-	private void populateControls(Composite parent) {
-		tabFolder = new TabFolder(parent, SWT.NULL);
+	private void buildControls() {
+		setLayout(new FillLayout());
+		tabFolder = new TabFolder(this, SWT.NULL);
 		
 		TabItem tab1 = new TabItem(tabFolder, SWT.NULL);
 		tab1.setText("Tab 1");

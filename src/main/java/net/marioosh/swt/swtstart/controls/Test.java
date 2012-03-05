@@ -10,12 +10,12 @@ public class Test extends Composite {
 	
 	public Test(Composite parent, int style) {
 		super(parent, style);
-		populateControls(parent);
+		buildControls();
 	}
 
-	private void populateControls(Composite parent) {
+	private void buildControls() {
 		setLayout(new FillLayout());
-		new Button(parent, SWT.PUSH).setText("Button");
-		new Text(parent, SWT.BOLD).setText("Label");
+		new Button(this, SWT.PUSH).setText("Button");
+		new Text(this, SWT.BOLD).setText("Label");
 	}
 }
