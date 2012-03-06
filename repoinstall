@@ -4,3 +4,5 @@ mvn install:install-file -DlocalRepositoryPath=repo -Dpackaging=jar -Dfile=lib\o
 mvn install:install-file -DlocalRepositoryPath=repo -Dpackaging=jar -Dfile=lib\org.eclipse.jface_3.7.0.v20110928-1505.jar         -DgroupId=org.eclipse -DartifactId=org.eclipse.jface          -Dversion=3.7.0.v20110928-1505
 mvn install:install-file -DlocalRepositoryPath=repo -Dpackaging=jar -Dfile=lib\org.eclipse.osgi_3.7.2.v20120110-1415.jar          -DgroupId=org.eclipse -DartifactId=org.eclipse.osgi           -Dversion=3.7.2.v20120110-1415
 mvn install:install-file -DlocalRepositoryPath=repo -Dpackaging=jar -Dfile=lib\org.eclipse.ui.workbench_3.7.1.v20120104-1859.jar  -DgroupId=org.eclipse -DartifactId=org.eclipse.ui.workbench   -Dversion=3.7.1.v20120104-1859
+mvn install:install-file -DlocalRepositoryPath=repo -Dpackaging=jar -Dfile=javadoc\swt-win32-3.7.2-sources.jar  -DgroupId=org.eclipse -DartifactId=swt-win32  -Dversion=3.7.2 -Dc
+lassifier=javadoc
