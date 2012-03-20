@@ -30,6 +30,7 @@ public class FileOpenDialog extends Composite {
 			@Override
 			public void widgetSelected(SelectionEvent selectionevent) {
 				FileDialog dialog = new FileDialog(getShell(), SWT.SINGLE);
+				dialog.setFilterExtensions(new String[]{".txt",".pdf"});
 				String filePath = dialog.open();
 				file.setText(filePath);
 			}
