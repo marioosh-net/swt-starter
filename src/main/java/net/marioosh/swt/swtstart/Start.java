@@ -2,6 +2,7 @@ package net.marioosh.swt.swtstart;
 
 import net.marioosh.swt.swtstart.controls.FileOpenDialog;
 import net.marioosh.swt.swtstart.controls.Input;
+import net.marioosh.swt.swtstart.controls.ProgressBar;
 import net.marioosh.swt.swtstart.controls.Tabs;
 import net.marioosh.swt.swtstart.controls.Test;
 
@@ -84,6 +85,11 @@ public class Start extends ApplicationWindow {
 		 * file dialog
 		 */
 		new FileOpenDialog(parent, SWT.NONE);
+		
+		/**
+		 * progress bar
+		 */
+		new ProgressBar(parent, SWT.NONE);
 		
 		// parent.pack();
 		return parent;
