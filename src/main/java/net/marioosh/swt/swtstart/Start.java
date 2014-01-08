@@ -50,15 +50,18 @@ public class Start extends ApplicationWindow {
 		layout.verticalSpacing = 10;
 		parent.setLayout(layout);
 
+		Composite main = new Composite(parent, SWT.NONE);
+		main.setLayout(new GridLayout(1, false));
+		
 		/**
 		 * button example
 		 */
-		Button button = new Button(parent, SWT.PUSH);
+		Button button = new Button(main, SWT.PUSH);
 		button.setText("Button");
 		button.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-				MessageDialog dialog = new MessageDialog((Shell) parent, "Title", null, "Message ..... .", MessageDialog.INFORMATION, new String[] { "Ok" }, 0);
+				MessageDialog dialog = new MessageDialog((Shell) main, "Title", null, "Message ..... .", MessageDialog.INFORMATION, new String[] { "Ok" }, 0);
 				dialog.open();							
 			}
 		});
@@ -66,12 +69,12 @@ public class Start extends ApplicationWindow {
 		/**
 		 * some controls in outside class
 		 */
-		new Test(parent, SWT.NULL);
+		new Test(main, SWT.NULL);
 		
 		/**
 		 * tabs controls
 		 */
-		Tabs tabs = new Tabs(parent, SWT.NONE);
+		Tabs tabs = new Tabs(main, SWT.NONE);
 		Composite tab1Container = (Composite) tabs.getTab(0).getControl();
 		tab1Container.setLayout(new FillLayout());
 		new Button(tab1Container, SWT.PUSH).setText("Tab1 button");
@@ -79,17 +82,17 @@ public class Start extends ApplicationWindow {
 		/**
 		 * inputs
 		 */
-		new Input(parent, SWT.NONE);
+		new Input(main, SWT.NONE);
 		
 		/**
 		 * file dialog
 		 */
-		new FileOpenDialog(parent, SWT.NONE);
+		new FileOpenDialog(main, SWT.NONE);
 		
 		/**
 		 * progress bar
 		 */
-		new ProgressBar(parent, SWT.NONE);
+		new ProgressBar(main, SWT.NONE);
 		
 		// parent.pack();
 		return parent;
