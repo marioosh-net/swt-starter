@@ -50,7 +50,7 @@ public class Start extends ApplicationWindow {
 		layout.verticalSpacing = 10;
 		parent.setLayout(layout);
 
-		Composite main = new Composite(parent, SWT.NONE);
+		final Composite main = new Composite(parent, SWT.NONE);
 		main.setLayout(new GridLayout(1, false));
 		
 		/**
